@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Treatment
+
+# Model Form Field configuration
+form: $/samuel/fametsis/models/treatment/fields.yaml
+
+# Model Class name
+modelClass: Samuel\Fametsis\Models\Treatment
+
+# Default redirect location
+defaultRedirect: samuel/fametsis/treatments
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: samuel/fametsis/treatments/update/:id
+    redirectClose: samuel/fametsis/treatments
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: samuel/fametsis/treatments
+    redirectClose: samuel/fametsis/treatments
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title
